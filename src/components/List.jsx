@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
-import hocWithHighlight from "./hocWithHighlight"
+import withHighlight from "./withHighlight";
 import Video from "./Video";
 import Article from "./Article";
 
-const HighlightedArticle = hocWithHighlight(Article);
-const HighlightedVideo = hocWithHighlight(Video);
+const HighlightedArticle = withHighlight(Article);
+const HighlightedVideo = withHighlight(Video);
 
 // Компонент для отображения списка статей и видео
 function List(props) {

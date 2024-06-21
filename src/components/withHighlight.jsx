@@ -3,7 +3,7 @@ import New from "./New";
 
 // HOC для оборачивания компонента в New или Popular в зависимости
 // от количества просмотров
-function hocWithHighlight(Component) {
+function withHighlight(Component) {
   return function aaa(props) {
     if (props.views > 1000) {
       return (
@@ -22,4 +22,4 @@ function hocWithHighlight(Component) {
   };
 }
 
-export default hocWithHighlight;
+export default withHighlight;
