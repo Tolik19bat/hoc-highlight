@@ -5,6 +5,7 @@ function Video(props) {
   return (
     <div className="item item-video">
       <iframe
+        name="iframe"
         src={props.url}
         className="video-frame"
         allow="autoplay; encrypted-media"
