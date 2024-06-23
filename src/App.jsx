@@ -1,14 +1,13 @@
-import './App.css'
-import List from './components/List'
-import list from './data/data'
+import "./App.css";
+import List from "./components/List";
+import list from "./data/data";
 
 function App() {
-
   return (
     <>
-       <List list={list} />
+      <List list={list} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
