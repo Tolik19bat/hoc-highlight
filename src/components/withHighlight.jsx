@@ -6,12 +6,14 @@ import New from "./New";
 function withHighlight(Component) {
   return function aaa(props) {
     if (props.views > 1000) {
+      
       return (
         <Popular>
           <Component {...props} />
         </Popular>
       );
     } else if (props.views < 100) {
+      
       return (
         <New>
           <Component {...props} />
